@@ -1,10 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Drashpul</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drashpul.me</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e293b, #2563eb);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #60a5fa;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+    </style>
 </head>
 <body>
-    <h1>Привіт, світ!</h1>
-    <p>Це мій перший </p>
+
+<header>
+    <h1>Drashpul</h1>
+    <p>Студент • Разработчик • Владелец izh planeta 3 🚗</p>
+
+    <a href="#about" class="btn">Узнать больше</a>
+</header>
+
+<section id="about">
+    <h2>Обо мне</h2>
+    <p>
+        Привет! Меня зовут Drashpul.
+        Я изучаю программную инженерию, создаю проекты на C++,
+        интересуюсь веб-разработкой и постоянно изучаю новые технологии.
+    </p>
+</section>
+
+<section>
+    <h2>Мои интересы</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💻 Программирование</h3>
+            <p>Разработка на C++, алгоритмы и создание собственных проектов.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Веб-разработка</h3>
+            <p>Изучение HTML, CSS, JavaScript и создание сайтов.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 izh paneta 3</h3>
+            <p>Люблю мото и езжу на izh paneta 3 с 2015 года.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Контакты</h2>
+    <p>Связаться со мной можно через Discord, Telegram или GitHub.</p>
+</section>
+
+<footer>
+    <p>© 2026 Drashpul.me | Все права защищены</p>
+</footer>
+
 </body>
 </html>
